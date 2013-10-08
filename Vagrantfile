@@ -60,7 +60,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # information on available options.
   
   # My provision script
-  config.vm.provision :shell, :path => "provision.sh"
+  #config.vm.provision :shell, :path => "provision.sh"
   config.vm.provision :shell, :path => "provision2.sh"
 
   # Enable provisioning with Puppet stand alone.  Puppet manifests
