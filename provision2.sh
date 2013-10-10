@@ -2,11 +2,12 @@ apt-get update
 apt-get install -y vim
 apt-get install -y unzip
 apt-get install -y git
-wget http://nodejs.org/dist/v0.10.20/node-v0.10.20-linux-x64.tar.gz
-tar zxvf node-v0.10.20-linux-x64.tar.gz
-echo 'PATH="$PATH:$HOME/node-v0.10.20-linux-x64/bin"' >> ~/.bashrc
-export PATH="$PATH:$HOME/node-v0.10.20-linux-x64/bin"
-source ~/.bashrc
+apt-get install -y npm
+#wget http://nodejs.org/dist/v0.10.20/node-v0.10.20-linux-x64.tar.gz
+#tar zxvf node-v0.10.20-linux-x64.tar.gz
+#echo 'PATH="$PATH:$HOME/node-v0.10.20-linux-x64/bin"' >> ~/.bashrc
+#export PATH="$PATH:$HOME/node-v0.10.20-linux-x64/bin"
+#source ~/.bashrc
 npm install -g appium@0.10.0
 npm install wd
 cd /etc/init

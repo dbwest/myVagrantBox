@@ -1,12 +1,17 @@
 ## Current Status
-I've been working on a self contained Vagrant box for testing. Currently it loads, Appium, Jenkins, and rvm and some other things. It provisions from a base image and forwards the ports for Jenkins.
+I've been working on a self contained Vagrant box for testing. Currently it loads, Appium, Jenkins, and rvm and some other things. 
 
-## What's Next
-I still need to
-- Find a way to have the box drive tests on simulators on the host machine. I'm going to see if the guest box can do this, even if the host box isn't the machine with Appium. I want the Vagrant box to have as much on it as I can put on it, and I want to see if it can be where Appium resides.
-- Modify the tests to use Appium remotely on the Vagrant box. I'll want to fork a test repo I've been working on, modify it to work with the new setup
-- Make jobs to kick off the tests.
-- And maybe more! I'll find out...
+It provisions from a base image 
+
+It is currently using bridged networking, and you will need to find the IP of the Vagrant box with `ifconfig`. 
+
+
+This is a work in progress, and though it does some things (loads rvm, Appium, Jenkins, downloads the Android SDK, etc) there are things not ironed out. These include:
+
+- The Jenkins plugins aren't automatically installing yet
+- I want to add to the PATH on the vagrant box. I haven't figured out how to do this. I'm limited to using `npm` and `apt-get` because they do this stuff as part of setup.
+
+I have not tested it with Android (on the [Genymotion](genymotion.com) emulator.) I hope to do this soon. I think it should work with it.
 
 The prospect of doing this is very exciting to me. Setting all this up takes a lot of steps, so when done by hand, it may work on one machine and not on another. This should get closer to solving that.
 
