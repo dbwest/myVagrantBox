@@ -2,7 +2,9 @@
 1. Get [Vagrant](http://downloads.vagrantup.com/)
 2. Install it using the installer
 3. clone the repo `git clone https://github.com/dbwest/myVagrantBox.git`
-4. `vagrant up` and watch the provisioning happen. Plan to wait while things automatically download and install.
+4. `vagrant up` from the repo directory and watch the provisioning happen. Plan to wait while things automatically download and install.
+5. You can `vagrant ssh` into it if you are in the repo's directory
+6. `vagrant halt`, `vagrant suspend`, or `vagrant destroy` when you're done
 
 ## Current Status
 I've been working on a self contained Vagrant box for testing. Currently it loads, Appium, Jenkins, and rvm and some other things. 
