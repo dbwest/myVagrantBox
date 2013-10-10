@@ -11,7 +11,7 @@ This is a work in progress, and though it does some things (loads rvm, Appium, J
 - The Jenkins plugins aren't automatically installing yet
 - I want to add to the PATH on the vagrant box. I haven't figured out how to do this. I'm limited to using `npm` and `apt-get` because they do this stuff as part of setup.
 
-I have not tested it with Android (on the [Genymotion](genymotion.com) emulator.) I hope to do this soon. I think it should work with it.
+I have not tested it with Android (on the [Genymotion](http://genymotion.com) emulator.) I hope to do this soon. I think it should work with it.
 
 The prospect of doing this is very exciting to me. Setting all this up takes a lot of steps, so when done by hand, it may work on one machine and not on another. This should get closer to solving that.
 
